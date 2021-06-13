@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Cantor</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cantor.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/funçõesjava.js"></script>
+    <script src="javascript/slider.js"></script>
+
+</head>
+<body>
+    <header >
+        <nav id="menu">
+            <ul id="menulista">
+            <li class="itens"><a href="homemusikada.html" class="aitens">Home</a></li>  
+              <li class="itens" style="background-color: white;" onmousemove="mostra()"><a href="" class="aitens">Cantor</a></li>
+              <li class="itens"><a href="enviarcifras.html" class="aitens">Enviar cifras</a></li>
+              <li class="itens"><a href="anunciarevento.html" class="aitens">Anunciar evento</a></li>
+              <li class="itens"><a href="sobrenos.html" class="aitens" >Sobre nós</a></li>
+              <li class="itens" onmousemove="ativando()" ><a href=""  class="aitens">Entrar</a></li>
+            </ul>
+        </nav>
+        <div id="logobusca">
+            <img src="image/logo.png" alt="logotipo" id="logotipo">
+            <input type="text " id="barrapesquisar" placeholder="Qual música tocar ?">
+            <button id="botaopesquisar">Pesquisar</button>
+        </div>
+    </header>
+    <main id="conteudo">
+          <!--Tela de login-->
+          <div id="telalogin" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Login</h1>
+            <form>
+                <input type="text" name="" placeholder="E-mail" >
+                <input type="password" name="" placeholder="Senha">
+                <input type="submit" value="Entrar">
+                <p>Esqueceu sua senha? <a href="#">Clique aqui</a> <br> </p> 
+                <p>Ainda não possui conta? <a href="#" onclick="cadastro()">Cadastre-se!</a> </p> 
+            </form>
+        </div>
+        <!--Tela de cadastro-->
+        <div id="telacadastrar">
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Cadastre-se!</h1>
+            <form>
+                <input type="text" id="nome" placeholder="Nome e sobrenome"><br><br>
+                <input type="text" id="telefone" placeholder="Telefone"> <br><br>
+                <input type="email" id="email" placeholder="E-mail"><br><br>
+                <input type="password" id="senha" placeholder="Senha" > <br><br>
+                <input type="password" id="confirmarsenha" placeholder="Confirmar a senha" >
+                <p class="texto">Ao clicar em "cadastrar", você aceita os nossos <a href="">Termos de uso e privacidade</a></p>
+                <button name="cadastrar" onclick="telavalidar()">Cadastrar</button>
+            </form>
+        </div>
+        <!--Tela confirmação do cadastro-->
+        <div id="telaconfirmar" >
+            <p class="sair" onclick="sairtelavalidar()">X</p>
+            <form>
+                <p>Insira o codigo recebido, para validar as informações!</p> 
+                <input name="codigo" id="codigo" type="text">
+                <button name="btvalidar" id="btvalidar" >Validar</button>
+            </form>
+        </div>
+        <!--Tela para pesquisar pelo cantor-->
+        <div id="telacantor" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Procurar a música pelo cantor</h1>
+            <input type="text" placeholder="Digite o nome do cantor">
+            <button><a href="cantor.html">Buscar</a></button>
+        </div>
+         <!--Area das 10 primeiras musicas do cantos-->
+        <div id="cantor">
+            <figure id="fotocantor">
+                <img src="image/pretoshow.jpg" alt="Foto do cantor" id="foto">
+                <figcaption>Preto Show</figcaption>
+             </figure>   
+             <ol id="musicas" onmouseover="sairtela()">
+                <li>Pedra ft Filho do Zua</li>
+                <li>Sacanagem ft Biura</li>
+                <li>My love</li>
+                <li>Vai devagar ft Anselmo Ralph</li>
+                <li>Festa da Fazenda</li>
+                <li>Mulher rara</li>
+                <li>Vida louca</li>
+                <li>Te quero</li>
+                <li>Tudo para mim</li>
+            </ol>    
+        </div>
+        <!--Área dos eventos-->
+        <div id="eventos">
+            <!--Localizar eventos por bairro-->
+            <p id="locabairro"> Localização <input type="text" id="localidade" size="10" maxlength="10" list="Bairro"></p>
+            <datalist id="Bairro">
+                <option value="Maianga"></option>
+                <option value="Benfica"></option>
+                <option value="Golfe 2"></option>
+                <option value="Cazenga"></option>
+                <option value="Cazenga"></option>
+            </datalist>
+           <!--Eventos-->
+           <ul id="galeriaevento">
+                <a href="eventoexpandido.html">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/nomalanga.jpg" alt="Imagem da festa">
+                        <p style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633"> <strong>24 Fev, 15h</strong></p>
+                        <p>Pavilhão multiuso</p> 
+                    </li>
+                </a> 
+                <a href="">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/sumer.jpg" alt="Imagem da festa">
+                        <p style="font-size:20"><strong>Summer concert</strong></p>
+                        <p style="color: #DC7633"> <strong>04 Jan, 23h</strong></p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </li>
+                </a> 
+                <a href="">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/luandafesta.jpg" alt="Imagem da festa">
+                        <p style="font-size:20"><strong>Festa da cidade de Luanda</strong></p>
+                        <p style="color: #DC7633"> <strong>30 jan, 18h</strong></p>
+                        <p>Pavilhão multiuso</p> 
+                    </li>
+                </a> 
+                <a href="">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/sabadaoqualquer.jpg" alt="Imagem da festa">
+                        <p style="font-size:20"><strong>Sabadão de qualquer jeito</strong></p>
+                        <p style="color: #DC7633"> <strong>21 mai, 14h</strong></p>
+                        <p>Pavilhão multiuso</p> 
+                    </li>
+                </a> 
+            </ul>
+        </div>
+    </main>
+    <!--Área dos videos-->
+    <div class="areavideo">
+        <div class="videos" >
+            <iframe class="cover" src="https://www.youtube.com/embed/LNUcQ3QbqdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="cover" src="https://www.youtube.com/embed/hXQxSi34GWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="cover" src="https://www.youtube.com/embed/atyU7YQ9roo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="cover" src="https://www.youtube.com/embed/zcqwcPfqx8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="cover" src="https://www.youtube.com/embed/pnDPbcIhejI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="cover" src="https://www.youtube.com/embed/gTYB6KZPsBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="cover" src="https://www.youtube.com/embed/dreomBIfJKI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+          <!--Setas de avançar-->
+         <div id="setaanterior" class="seta"></div>
+         <div id="setaproximo" class="seta"></div>      
+    </div>
+     <!--Área do rodapé-->
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+            <ul id="musikada">
+                <li><strong>Musikada</strong></li>
+                <li><a href="homemusikada.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="">Termos e Politicas</a></li>
+            </ul>
+            <ul id="organizador">
+                <li><strong>Para organizador de eventos</strong></li>
+                <li><a href="">Como funciona</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Portal</a></li>
+            </ul>
+            <ul id="central">
+                <li>Central de Ajuda</li>
+                <li><a href="faleconosco.html">Fale conosco</a></li>
+            </ul>   
+            <div class="rede">
+                <h1>Siga nos</h1> 
+                <a href=""><img src="image/facebook.png" alt=""></a>
+                <a href=""><img src="image/instagram.png" alt=""></a>
+                <a href=""><img src="image/twitter.png" alt=""></a>
+                <a href=""><img src="image/youtube.png" alt=""></a>
+            </div>  
+        </div>
+    </footer>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

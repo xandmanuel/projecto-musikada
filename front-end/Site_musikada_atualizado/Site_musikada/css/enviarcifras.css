@@ -1,0 +1,177 @@
+header{
+    text-align: center;
+}
+/*Estlios da area o Menu*/
+    nav#menu {
+        display: block;
+        height: 40px;
+        background-color: #f0833b;
+    }
+    ul#menulista{
+
+        list-style: none;
+        position: relative;
+        top: 7px;
+    }
+    li.itens {
+
+        display: inline-block;
+        background-color: #BDBDBD;
+        padding:3px;
+        margin: 2px;
+        border-radius: 8px;
+
+    }
+    .itens:last-child{
+
+        position: absolute;
+        right: 10px;
+
+    }
+    a.aitens{
+
+        text-decoration: none;
+        color: black;
+        padding: 4px;
+    }
+
+    a.aitens:hover{
+        text-decoration: underline ;
+    }
+/*Estilos da area de busca*/
+    #logotipo{
+
+        width: 160px;
+        height: 105px;
+    }
+
+    #logobusca{
+
+        background-color:#a8a5a5ea;
+    }
+    #barrapesquisar{
+        position: absolute;
+        margin-top: 40px;
+        padding-left: 4px;
+        border-radius: 8px;
+    }
+    #botaopesquisar{
+        position: relative;
+        left: 180px;
+        bottom:48px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+/*Estilos da area main*/        
+    main{
+
+        margin-left: 20%;
+    }
+
+/*Estilos das informações da musica*/  
+    .formulario {
+        width:60%;
+        display: inline-block;
+    }
+    .formulario label {
+        display: block;
+        text-align: right;
+    }
+    .formulario textarea {
+        margin-top: 1%;
+        display: inline-block;
+        width: 70%;
+        vertical-align: top;
+        background-color: #BDBDBD;
+        resize: none;
+    }
+    .formulario input {
+        margin-top: 1%;
+        display: inline-block;
+        width: 70%;
+        background-color: #BDBDBD;
+    }
+
+    .formulariolabel:first-child{
+        margin-top:4%;
+    }
+    .formulario button{
+        margin-left: 60%;  
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+/*Estilos do rodape*/  
+    footer#rodape{
+        background-color: black;
+        color: white;
+        display: block;
+    }
+    footer p#copyright{
+
+        position: relative;
+        top: 100px;
+    }
+
+    footer div{
+
+        margin-left: 20px;
+    }
+    #logorodape{
+
+        width: 120px;
+        height: 80px;
+        position: relative;
+        margin-left: 380px;
+    }
+    ul#musikada{
+        list-style: none;
+        position: relative;
+        margin-left: 510px;
+        top: -60px;
+    }
+    ul#musikada li{
+        margin: 4px;
+    }
+    ul#organizador{
+        list-style: none;
+        position: relative;
+        margin-left: 680px;
+        top: -140px;
+    }
+    ul#organizador li{
+        margin: 4px;
+    }
+    ul#central{
+        list-style: none;
+        position: relative;
+        margin-left: 910px;
+        top: -200px;
+    }
+    ul#central a{
+        margin: 4px;
+    }
+    footer div a{
+    color: white;
+    text-decoration: none;
+    }
+    footer div a:hover{
+        text-decoration: underline;
+    }
+    .rede{
+
+        position: relative;
+        margin-top: -120px;
+        margin-left: 380px;
+        
+    }
+    .rede h1{
+        font-size: 1.3em;
+    }
+  
+    .rede a{
+        display: inline-flex;
+        margin:1.5%;
+    }
+    .rede img{
+        width: 30px;
+    }

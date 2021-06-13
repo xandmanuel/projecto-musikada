@@ -1,0 +1,273 @@
+/*Estilo da tela do login*/
+	#telalogin {
+		width: 22%;
+		height: 360px;
+		border: 1px solid black;
+		border-radius: 8px;
+		color: black;
+		background-color: rgba(252, 252, 252, 0.8);
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		box-sizing: border-box;
+		padding: 68px 28px; 
+		display: none;
+		z-index: 1;
+	}
+
+	#telalogin h1{
+		margin: 0;
+		padding-top: 0;
+		padding-left: 0;
+		padding-bottom: 40px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#telalogin p{
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	#telalogin .sair{
+		top: 5%;
+		right: 10%;
+		font-size: 16px;
+		position: absolute;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	#telalogin input {
+		width: 100%;
+		margin-bottom: 21px; 
+	}
+
+	#telalogin input[type="password"] {
+		border: none;
+		border-bottom: 1px solid black;
+		background: transparent;
+		outline: none;
+		height: 30px;
+		color: black;
+		font-size: 16px;
+	}
+	#telalogin input[type="text"]{
+		border: none;
+		border-bottom: 1px solid black;
+		background: transparent;
+		outline: none;
+		height: 30px;
+		color: black;
+		font-size: 16px;
+	}
+
+	#telalogin input[type="submit"] {
+		border: none;
+		outline: none;
+		height: 35px;
+		color: #000;
+		background: orange;
+		border-radius: 20px;
+		transition: 0.2s;
+	}
+
+	#telalogin input[type="submit"]:hover {
+		cursor: pointer;
+		background: #f05a03;
+		transition: 0.2s;
+	}
+
+	#telalogin a {
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 13px;
+		line-height: 20px;
+		color: orange;
+
+	}
+
+	#telalogin a:hover {
+		transition: 0.2s;
+		text-decoration: underline;
+	}
+/*Estilo da tela de se cadastrar*/
+	#telacadastrar{
+
+		width: 22%;
+		height: 420px;
+		padding-top: 30px; 
+		box-sizing: border-box;
+		background-color: rgba(252, 252, 252, 0.8);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		border-radius: 8px;
+		border: 1px solid black;
+		text-align: center;
+		display: none;	
+		z-index: 1;
+	}
+
+	#telacadastrar h1{
+		margin-top: 14%;
+		padding-top: 0;
+		padding-left: 0;
+		padding-bottom: 20px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		font-size: 25px;
+
+	}
+	#telacadastrar input {
+		border: none;
+		border-bottom: 1px solid black;
+		background: transparent;
+		outline: none;
+		height: 20px;
+		width: 80%;
+		color: black;
+		font-size: 16px;
+		
+	}
+	#telacadastrar button {
+		border: none;
+		outline: none;
+		width: 70%;
+		height: 35px;
+		color: #000;
+		margin-top: 2%;
+		background: orange;
+		border-radius: 20px;
+		cursor: pointer;
+	}
+	
+	#telacadastrar .texto {
+		margin: 10% 10% 0;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	
+	#telacadastrar button:hover {
+		cursor: pointer;
+		background: #f05a03;
+		transition: 0.2s;
+	}
+	#telacadastrar a{
+		text-decoration: none;
+		color:orange;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 20px;
+	}
+	#telacadastrar a:hover{
+
+		text-decoration: underline;
+	}
+
+	#telacadastrar .sair{
+		right: 10%;
+		font-size: 16px;
+		font-weight: bold;
+		position: absolute;
+		cursor: pointer;
+	}
+/*Estilo da tela de confirmação do cadastro*/
+	/*Estilo da tela de confirmação do cadastro*/
+	#telaconfirmar {
+		width: 20%;
+		height: 150px;
+		border: 1px solid black;
+		border-radius: 8px;
+		color: black;
+		background-color: rgba(252, 252, 252, 0.8);
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		box-sizing: border-box;
+		padding: 2%;
+		text-align: center;
+		display: none;
+		}
+	#telaconfirmar p{
+		margin-top: 1%;
+		padding-bottom: 2%;
+		font-size: 16px;
+		font-weight: bold;
+		}
+	#telaconfirmar .sair{
+			top: 5%;
+			right: 5%;
+			font-size: 16px;
+			position: absolute;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	#telaconfirmar input{
+			margin-top: 1%;
+			padding-bottom: 2%;
+		}
+	#telaconfirmar button{
+			border: none;
+			outline: none;
+			margin-top: 3%;
+			width: 80%;
+			height: 35px;
+			background: orange;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+	
+	#telaconfirmar button:hover {
+			cursor: pointer;
+			background: #f05a03;
+			transition: 0.2s;
+		}
+/*Estilo da tela de buscar pelo cantor*/
+	#telacantor{
+		width: 300px;
+		height: 100px;
+		border: 1px solid black;
+		position: absolute;
+		border-radius: 8px;
+		top: 6%;
+		left: 38%;
+		background-color: rgba(252, 252, 252, 0.8);
+		box-sizing: border-box;
+		padding-top: 1.3%; 
+		display: none;
+	}
+	#telacantor h1{
+		letter-spacing: 1px;
+		font-size: 16px;
+		margin-left: 12px;
+		font-weight: bold;	
+	 }
+	#telacantor button{
+		background-color: orange;
+		border-radius:0 8px 8px 0;
+		margin-top: 4%;
+	}
+	#telacantor a{
+		text-decoration: none;
+
+	}
+	#telacantor input{
+
+		margin-left: 12px;
+
+	}
+	#telacantor .sair{
+		top: 10%;
+		right: 5%;
+		font-size: 16px;
+		position: absolute;
+		font-weight: bold;
+		cursor: pointer;
+	}

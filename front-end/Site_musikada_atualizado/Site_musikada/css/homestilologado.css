@@ -1,0 +1,307 @@
+header{
+
+    text-align: center;
+}
+/*Estlios da area o Menu*/
+    nav#menu {
+
+        display: block;
+        height: 40px;
+        background-color: #f0833b;
+    }
+    ul#menulista{
+
+        list-style: none;
+        position: relative;
+        top: 7px;
+    }
+
+    li.itens {
+
+        display: inline-block;
+        background-color: #BDBDBD;
+        padding:3px;
+        margin: 2px;
+        border-radius: 8px;
+
+    }
+  
+    a.aitens{
+
+        text-decoration: none;
+        color: black;
+        padding: 4px;
+    }
+
+    a.aitens:hover{
+        text-decoration: underline ;
+    }
+/*Estilos da area de busca*/
+    #logotipo{
+
+        width: 160px;
+        height: 105px;
+    }
+
+    #areadebusca{
+
+        background-color:#a8a5a5ea;
+    }
+    #barrapesquisar{
+        position: absolute;
+        margin-top: 40px;
+        padding-left: 4px;
+        height: 30px;
+        width: 15%;
+    }
+    #botaopesquisar{
+        position: relative;
+        height: 36px;
+        left: 240px;
+        bottom:43px;
+        background-color: #f0833b;
+        border-radius:0 8px 8px 0;
+        cursor: pointer;
+    }
+/*Estilos da area main*/    
+    main#conteudo{
+        height: 500px;
+    }
+    div#cifras{
+        float: left;
+        width: 49.5%;
+        height: 500px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    div#cifras ul{
+
+        display: inline-block;
+        list-style: none;
+
+    }
+    div#cifras a{
+
+        width: 50%;
+    }
+    div#cifras ul li{
+        display: inline-block;
+        padding: 20px;
+        margin: 10px;
+        width: 30%;
+        height: 20px;
+        background-color:#E6E6E6;
+    }
+    div#cifras ul li:hover{
+        background-color: rgb(240, 131, 59);
+    }
+/*Estilos da area de eventos*/
+    div#eventos{
+
+        float:right;
+        width: 50%;
+        height: 500px;
+        border-left: 1px solid grey;
+    }
+    #locabairro{
+
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+    .evento{
+        width: 250px;
+        height: 200px;
+        background-color: #E6E6E6;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .evento p{
+        margin:15px;
+    }
+    .teste1{
+        height: 70%;
+        width: 100%; 
+       }
+    .imagem{
+        float: left;
+        width: 80%;
+        height: 100%;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-radius: 10px;
+        padding: 4%;
+        box-sizing: border-box;    
+    }
+    .imagem:hover{
+        box-shadow:  2px 2px 30px rgba(0, 0, 0,.1);
+        border-radius: 10px;
+    }
+    .imagem img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    } 
+    .localizacao{
+        height: 30%;
+        text-align: center;
+        line-height: 1px;   
+    }
+    .salvar span{
+        margin: 3%;
+        font-size: 40px;
+        cursor: pointer;
+    }
+/*Estilos da area dos vidoes*/
+    #videos{
+
+        height: 240px;
+        width: 100%;
+        background-color:#BDBDBD;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    iframe{
+        display: inline-block;
+    }
+    #v1{
+
+        margin-left: 1%;
+    }
+/*Estilos do rodape*/    
+    footer#rodape{
+
+        background-color: black;
+        color: white;
+        display: block;
+    }
+
+    footer p#copyright{
+
+        position: relative;
+        top: 100px;
+    }
+
+    footer div{
+
+        margin-left: 20px;
+    }
+    #logorodape{
+
+        width: 120px;
+        height: 80px;
+        position: relative;
+        margin-left: 380px;
+    }
+    ul#musikada{
+        list-style: none;
+        position: relative;
+        margin-left: 510px;
+        top: -60px;
+    }
+    ul#musikada li{
+        margin: 4px;
+    }
+    ul#organizador{
+        list-style: none;
+        position: relative;
+        margin-left: 680px;
+        top: -140px;
+    }
+    ul#organizador li{
+        margin: 4px;
+    }
+    ul#central{
+        list-style: none;
+        position: relative;
+        margin-left: 910px;
+        top: -200px;
+    }
+    ul#central a{
+        margin: 4px;
+    }
+    footer div a{
+    color: white;
+    text-decoration: none;
+    }
+    footer div a:hover{
+        text-decoration: underline;
+    }
+/*Estilo dos itens logado*/
+    #telabarras {
+        background-color: white;
+        width: 11%;
+        color: black;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 1%;
+        box-sizing: border-box;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        display: none;
+    }
+    #telabarras li{
+        padding-top:4%;
+        cursor: pointer;
+    }
+    #telabarras p{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        cursor: pointer;
+    }
+    #itenslogado{
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        cursor: pointer;
+    }
+    #itenslogado li{
+        display: inline-block;
+        padding-left: 10px;
+    
+    }
+    #imagemperfil{
+        border-radius: 50%;
+        width: 20px;
+    }
+    #telanotificacoes{
+        width: 20%;
+        background-color: white;
+        border: 1px solid black;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        padding:1%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: none;
+    }
+    #telanotificacoes h1{
+        font-weight: bold;
+    }
+    #telanotificacoes p{
+        position: absolute;
+        cursor: pointer;
+        top: 5%;
+        right: 5%;
+    }
+    .rede{
+
+        position: relative;
+        margin-top: -120px;
+        margin-left: 380px;
+        
+    }
+    .rede h1{
+        font-size: 1.3em;
+    }
+  
+    .rede a{
+        display: inline-flex;
+        margin:1.5%;
+    }
+    .rede img{
+        width: 30px;
+    }

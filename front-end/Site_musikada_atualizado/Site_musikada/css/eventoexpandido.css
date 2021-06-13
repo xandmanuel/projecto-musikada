@@ -1,0 +1,327 @@
+header{
+
+    text-align: center;
+}
+/*Estilo da area do menu*/
+nav#menu {
+
+    display: block;
+    height: 40px;
+    background-color: #f0833b;
+}
+ul#menulista{
+
+    list-style: none;
+    position: relative;
+    top: 7px;
+}
+
+li.itens {
+
+    display: inline-block;
+    background-color: #BDBDBD;
+    padding:3px;
+    margin: 2px;
+    border-radius: 8px;
+
+}
+.itens:first-child{
+
+    position: absolute;
+    left: 380px;
+
+}
+.itens:last-child{
+
+    position: absolute;
+    right: 10px;
+
+}
+a.aitens{
+
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+
+a.aitens:hover{
+    text-decoration: underline ;
+}
+/*Estilo das imagens do evento*/
+    div#imgfundo{
+        background-image: url('../image/sumer.jpg');
+        width: 100%;
+        height: 300px;
+        border-bottom: 1px solid black;    
+        opacity: 0.4;
+    }
+    #imgevento{
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        margin-top: -300px;
+        margin-left: -250px;
+    }
+/*Estilo da area do main*/
+    main {
+        height: 450px;
+        margin: 50px 200px ;
+
+    }
+/*Estilo da descrição do evento*/
+    main div#descricao{
+
+        width: 500px;
+        float: left;
+    }
+    main div h1{
+        font-weight: bold;
+    }
+    /*Estilo do compartilhar, add depois*/
+    #compartilhar{
+        margin-top: 2%;
+        font-size: 1.5em;
+    }
+    .redesociais{
+        margin-top: 1%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .redesociais#face{
+        background-color: #3b5998;
+    }
+    .redesociais#insta{
+        background-color: #487192;
+    }
+    .redesociais#twitter{
+        background-color: #00acee;
+    }
+    .redesociais#whats{
+        background-color:white;
+    }
+    .icone{
+    
+        width: 15px;
+        margin: 0px auto;
+        padding: 50% auto;
+    }
+    /*Estelização do pagamento*/
+    #pagamento{
+
+        width: 250px;
+        height: 120px;
+        background-color:#C4C4C4;
+    }
+   
+    #preço{
+        height: 30px;
+        width: 100%;
+        background-color: grey;
+    }
+    #preço p{
+        margin: 3%;
+        font-weight: bold;
+        font-size: 16pt;
+    }
+    #preço p:first-child{
+        float: left;
+    }
+    #preço p:last-child{
+        float: right;
+    }
+
+    #qtdaingresso{
+
+        margin-left: 35%;
+        font-size: 16pt;
+        text-align: center;
+    }
+    #btaocomparar{
+        font-size: 1.1em;
+        font-weight: bold;
+        background-color:#4afc09;
+        width: 150px;
+        height: 30px;
+        border-radius: 8px;
+        margin:4% 0 0 18%;
+    }
+    #btaocomparar:hover{
+        background-color: #25f52f;
+    }
+
+/*Estilo da descrição do organizador*/
+    #organizacao{
+
+        float: right;
+    }
+    #organiza{
+
+        background-color:#C4C4C4;
+        text-align: center;
+
+    }
+    #organiza h1{
+        margin-top: 30px;
+        height: 40px;
+        background-color: grey;
+    }
+    #organifoto{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+    }
+    #organiza input{
+        width: 100%;
+        height: 25px;
+    }
+/* falar com organizador */
+        #contatarorganizacao{
+            width: 650px;
+            height: 400px;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%,-50%);
+            position: fixed; 
+            border: 1px solid rgb(255, 255, 255);
+            background-color: #808080;
+            display: none;
+            z-index: 1;
+        }
+        #contatarorganizacao form{
+            width: 100%;
+            text-align: right;
+        }
+        #contatarorganizacao form label {
+            display: block;
+        }
+        #contatarorganizacao form input {
+            margin-top: 1%;
+            margin-right: 10%;
+            display: inline-block;
+            width: 70%;
+        }
+
+        #contatarorganizacao form textarea {
+            margin-top: 1%;
+            margin-right: 10%;
+            display: inline-block;
+            width: 70%;
+            vertical-align: top;
+            resize: none;
+        }
+        #contatarorganizacao form button{
+            background-color:#f0833b;
+            border-radius: 8px;
+            margin-right: 40%;
+            margin-top: 2%;
+            cursor: pointer;
+        }
+
+        #cabeca{
+            height: 10%;
+            background-color:#f0833b;
+        }
+        #cabeca h2{
+            margin: 0 0 0 4%;
+            font-weight: bold;
+        }
+        #cabeca p{
+            text-align: right;
+            margin-right: 2%;
+            cursor: pointer;
+        }
+
+/*Estilo da localização do evento*/
+    #localizacao{
+        height: 350px;
+        padding: 10px 200px 0 ;
+        background-color:#BDBDBD;
+    }
+    div#localizacao h1{
+
+        font-weight:bold ;
+        font-size: 20px;
+    }
+    #mapa{
+
+        width: 500px;
+        height: 300px;
+    }
+/*Estilo do rodape*/
+    footer#rodape{
+
+        background-color: black;
+        height: 300px;
+        color: white;
+        display: block;
+    }
+    footer p#copyright{
+
+        position: relative;
+        top: 100px;
+    }
+    footer div{
+
+        margin-left: 20px;
+    }
+    #logorodape{
+
+        width: 120px;
+        height: 80px;
+        position: relative;
+        margin-left: 380px;
+    }
+    ul#musikada{
+        list-style: none;
+        position: relative;
+        margin-left: 510px;
+        top: -60px;
+    }
+    ul#musikada li{
+        margin: 4px;
+    }
+    ul#organizador{
+        list-style: none;
+        position: relative;
+        margin-left: 680px;
+        top: -140px;
+    }
+    ul#organizador li{
+        margin: 4px;
+    }
+    ul#central{
+        list-style: none;
+        position: relative;
+        margin-left: 910px;
+        top: -200px;
+    }
+    ul#central a{
+        margin: 4px;
+    }
+    footer div a{
+        color: white;
+        text-decoration: none;
+    }
+    footer div a:hover{
+        text-decoration: underline;
+    }
+    .rede{
+
+        position: relative;
+        margin-top: -120px;
+        margin-left: 380px;
+        
+    }
+    .rede h1{
+        font-size: 1.3em;
+    }
+  
+    .rede a{
+        display: inline-flex;
+        margin:1.5%;
+    }
+    .rede img{
+        width: 30px;
+    }
+   

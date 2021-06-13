@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/faleconosco.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <script src="javascript/funçõesjava.js"></script>
+    <link rel="shortcut icon" href="image/logo.png">
+    <title>Fale conosco</title>
+</head>
+<body>
+    <header>
+        <nav id="menu" style="height: 40px;">
+            <ul id="menulista"></ul>
+        </nav>
+        <!--Div para poder ter a parte cinza, abaixo do menu-->
+        <div class="titulo">
+            <h1>Como podemos te ajudar?</h1>
+        </div>
+    </header>
+     <!--Div para o formulario de contacto-->
+    <main>
+        <form action="" id="formulario">
+        <h1>Formulario de solicitação</h1>
+        <label for="tipousuario"> Quem voce é <input type="text" name="tipousuario" id="tipousuario" size="50" maxlength="40" list="tipodeusuario"></label>
+        <datalist id="tipodeusuario">
+            <option name="comprador" value="Comprador de ingresso"></option>
+            <option name="organizador" value="Organizador de evento"></option>
+            <option name="instrumentalista" value="Toco instrumento musical"></option>
+        </datalist>
+        <label for="motivocontacto"> Motivo pelo contacto <input type="text" name="motivocontacto" id="motivocontacto" size="50" maxlength="40" list="motivo"></label>
+        <datalist id="motivo">
+            <option name="problemaconta" value="Problema com minha conta"></option>
+            <option name="configurarevento" value="Configurar meu evento"></option>
+            <option name="sugestao" value="Sugestão ou critica"></option>
+            <option name="outros" value="outros"></option>
+        </datalist>
+           <label for="nome">Digite teu nome <input type="text" name="nome" id="nome" placeholder="digite nome e sobrenome"></label>
+           <label for="email">Digite teu email <input type="text" name="email" id="email" placeholder="Dige email "></label>
+           <label for="descricao">Descrição <textarea name="descricao" id="descricao" cols="60" rows="10" placeholder="Escreva a tua mensagem!"></textarea></label> 
+            <button name="enviar">Enviar</button>
+        </form>
+    </main>
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+                    <ul id="musikada">
+                        <li><strong>Musikada</strong></li>
+                        <li><a href="homemusikada.html">Home</a></li>
+                        <li><a href="sobrenos.html">Sobre nós</a></li>
+                        <li><a href="">Termos e Politicas</a></li>
+                    </ul>
+                    <ul id="organizador">
+                        <li><strong>Para organizador de eventos</strong></li>
+                        <li><a href="">Como funciona</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Portal</a></li>
+                    </ul>
+                    <ul id="central">
+                        <li>Central de Ajuda</li>
+                        <li><a href="">Fale conosco</a></li>
+                    </ul>    
+        </div>
+    </footer>
+</body>
+</html>

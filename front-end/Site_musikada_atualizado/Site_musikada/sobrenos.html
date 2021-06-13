@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sobrenos.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <script src="javascript/funçõesjava.js"></script>
+    <title>Sobre Nos</title>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul id="menulista">
+              <li class="itens" onmousemove="sairtela()"><a href="homemusikada.html" class="aitens">Home</a></li>  
+              <li class="itens" onmousemove="mostra()"><a href="" class="aitens">Cantor</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="enviarcifras.html" class="aitens">Enviar cifras</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="anunciarevento.html" class="aitens">Anunciar evento</a></li>
+              <li class="itens" onmousemove="sairtela()" style="background-color: white;"><a href="sobrenos.html" class="aitens" >Sobre nós</a></li>
+              <li class="itens" onmousemove="ativando()" ><a href=""  class="aitens">Entrar</a></li>
+            </ul>
+        </nav>
+        <!--Div para poder ter a parte cinza, abaixo do menu-->
+        <div></div>
+    </header>
+    <main>
+        <!--Tela de login-->
+        <div id="telalogin" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Login</h1>
+            <form>
+                <input type="text" name="loginemail" placeholder="E-mail" >
+                <input type="password" name="loginsenha" placeholder="Senha">
+                <input type="submit" name="entrar" value="Entrar">
+                <p>Esqueceu sua senha? <a href="#">Clique aqui</a> <br> </p> 
+                <p>Ainda não possui conta? <a href="#" onclick="cadastro()">Cadastre-se!</a> </p> 
+            </form>
+        </div>
+        <!--Tela de cadastro-->
+        <div id="telacadastrar">
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Cadastre-se!</h1>
+            <form>
+                <input type="text" name="nome" id="nome" placeholder="Nome e sobrenome"><br><br>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Telefone"> <br><br>
+                <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
+                <input type="password" name="senha" id="senha" placeholder="Senha" > <br><br>
+                <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="Confirmar a senha" >
+                <p class="texto">Ao clicar em "cadastrar", você aceita os nossos <a href="">Termos de uso e privacidade</a></p>
+                <button name="cadastrar" onclick="telavalidar()">Cadastrar</button>
+            </form>
+        </div>
+        <!--Tela confirmação do cadastro-->
+        <div id="telaconfirmar" >
+            <p class="sair" onclick="sairtelavalidar()">X</p>
+            <form>
+                <p>Insira o codigo recebido, para validar as informações!</p> 
+                <input name="codigo" id="codigo" type="text">
+                <button name="btvalidar" id="btvalidar" >Validar</button>
+            </form>
+        </div>
+        <!--Tela para pesquisar pelo cantor-->
+        <div id="telacantor" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Procurar a música pelo cantor</h1>
+            <input type="text" placeholder="Digite o nome do cantor">
+            <button><a href="cantor.html">Buscar</a></button>
+        </div>
+        <img src="image/logo.png" alt="Logotipo do musikada" id="logogrande">
+        <h1 id="Qs">QUEM SOMOS</h1>
+            <div id="Qsomos">
+                <p>Pessoas apaixonadas por pessoas, que desejam agilizar o acesso a informação, e desenvolver soluções por meio de tecnologia.</p>
+            </div>    
+        <h1 id="Qa">O QUE ACREDITAMOS</h1>
+        <div id="Qacreditamos">
+            <p>Tempo deve ser bem aproveitado. Aprendizado e diversão não podem ser negligenciados.</p>
+        </div>
+        <h1 id="Qp">O QUE PROPOMOS </h1>
+        <div id="Qpropomos">
+            <p>Praticidade e segurança na obtenção de informações sobre notas músicais, e compra de ingresso online.</p>
+        </div>
+    </main>
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+            <ul id="musikada">
+                <li><strong>Musikada</strong></li>
+                <li><a href="homemusikada.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="">Termos e Politicas</a></li>
+            </ul>
+            <ul id="organizador">
+                <li><strong>Para organizador de eventos</strong></li>
+                <li><a href="">Como funciona</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Portal</a></li>
+            </ul>
+            <ul id="central">
+                <li>Central de Ajuda</li>
+                <li><a href="faleconosco.html">Fale conosco</a></li>
+            </ul>  
+            <div class="rede">
+                <h1>Siga nos</h1> 
+                <a href=""><img src="image/facebook.png" alt=""></a>
+                <a href=""><img src="image/instagram.png" alt=""></a>
+                <a href=""><img src="image/twitter.png" alt=""></a>
+                <a href=""><img src="image/youtube.png" alt=""></a>
+            </div>   
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Anunciar evento</title>
+    <link rel="stylesheet" href="css/anunciarevento.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <script src="javascript/funçõesjava.js"> </script>
+</head>
+<body>
+    <header >
+        <nav id="menu">
+            <ul id="menulista">
+              <li class="itens" onmousemove="sairtela()"><a href="homemusikada.html" class="aitens">Home</a></li>
+              <li class="itens" onmousemove="mostra()"><a href="" class="aitens">Cantor</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="enviarcifras.html" class="aitens">Enviar cifras</a></li>
+              <li class="itens" onmousemove="sairtela()" style="background-color: white;"><a href="" class="aitens">Anunciar evento</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="sobrenos.html" class="aitens" >Sobre nós</a></li>
+              <li class="itens" onmousemove="ativando()" ><a href=""  class="aitens">Entrar</a></li>
+            </ul>
+        </nav>
+        <div id="logobusca">
+            <img src="image/logo.png" alt="logotipo" id="logotipo">
+        </div>
+    </header>
+    <main>
+        <!--Tela de login-->
+        <div id="telalogin" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Login</h1>
+            <form>
+                <input type="text" name="emailtelefonelogin" placeholder="E-mail ou Tel">
+                <input type="password" name="senhalogin" placeholder="Senha">
+                <input type="submit" name="entrar" value="Entrar">
+                <p>Esqueceu sua senha? <a href="">Clique aqui</a> <br></p> 
+                <p>Ainda não possui conta? <a href="#" onclick="cadastro()">Cadastre-se!</a> </p> 
+            </form>
+        </div>
+        <!--Tela de cadastro-->
+        <div id="telacadastrar">
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Cadastre-se!</h1>
+            <form>
+                <input type="text" id="nome" name="nomecadastrar" placeholder="Nome e sobrenome"><br><br>
+                <input type="text" id="telefone" name="telefonecadastrar" placeholder="Telefone"> <br><br>
+                <input type="email" id="email" name="emailcadastrar" placeholder="E-mail"><br><br>
+                <input type="password" id="senha" name="senhacadastrar" placeholder="Senha" > <br><br>
+                <input type="password" id="confirmarsenha" name="confirmarsenha" placeholder="Confirmar a senha" >
+                <p class="texto">Ao clicar em "cadastrar", você aceita os nossos <a href="">Termos de uso e privacidade</a></p>
+                <button name="cadastrar" onclick="telavalidar()">Cadastrar</button>
+            </form>
+        </div>
+        <!--Tela confirmação do cadastro-->
+        <div id="telaconfirmar" >
+            <p class="sair" onclick="sairtelavalidar()">X</p>
+            <form>
+                <p>Insira o codigo recebido, para validar as informações!</p> 
+                <input name="codigo" id="codigo" type="text">
+                <button name="btvalidar" id="btvalidar" >Validar</button>
+            </form>
+        </div>
+        <!--Tela para pesquisar pelo cantor-->
+        <div id="telacantor" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Procurar a música pelo cantor</h1>
+            <input type="text" id="nomecantor" name="nomecantor" placeholder="Digite o nome do cantor">
+            <button><a href="cantor.html">Buscar</a></button>
+        </div>
+        <!--Informações sobre o evento-->
+        <form action="" class="cadastroevento" onclick="sairtela()">
+            <p>Nome do evento <input type="text" name="nomeevento" size="40"></p>
+            <p>Adicionar foto <input type="file" name="fotoevento"></p>
+            <p>Data de Inicio <input type="date" name="diainicio"></p>
+            <p>Hora de Inicio<input type="time" name="horafim"></p>
+            <p>Data de Fim <input type="date" name="diafim"></p>
+            <p>Hora de Fim<input type="time" name="horafim"></p>
+            <label for="pago"><input type="radio" name="valor" id="pago" name="pago">Pago</label>
+            <label for="gratis"><input type="radio" name="valor" id="gratis" name="gratis">Gratís</label>
+            <p>Tipo do ingresso <input type="text" list="tipo" size="5"></p>
+            <datalist id="tipo">
+                <option value="Vip" name="vip"></option>
+                <option value="Normal" name="normal"></option>
+            </datalist>
+            <p>Preço (Kz) <input type="text" id="preco" name="preco"  size="8"></p>
+            <p>Telefone <input type="text" id="foneorganizador" name="foneorganizador"></p>
+            <p>Localização <input type="text" id="localizacao" name="localizacao" size="60"></p>
+            <label for="descricao">Descrição do evento</label>
+            <textarea name="descricao" id="descricao" cols="70" rows="10" required></textarea>
+            <button name="enviar">Enviar</button>
+         </form>
+    </main>
+    <!--Área do rodapé-->
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+            <ul id="musikada">
+                <li><strong>Musikada</strong></li>
+                <li><a href="homemusikada.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="">Termos e Politicas</a></li>
+             </ul>
+             <ul id="organizador">
+                <li><strong>Para organizador de eventos</strong></li>
+                <li><a href="">Como funciona</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Portal</a></li>
+            </ul>
+            <ul id="central">
+                <li>Central de Ajuda</li>
+                <li><a href="faleconosco.html">Fale conosco</a></li>
+            </ul> 
+            <div class="rede">
+                <h1>Siga nos</h1> 
+                <a href=""><img src="image/facebook.png" alt=""></a>
+                <a href=""><img src="image/instagram.png" alt=""></a>
+                <a href=""><img src="image/twitter.png" alt=""></a>
+                <a href=""><img src="image/youtube.png" alt=""></a>
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>

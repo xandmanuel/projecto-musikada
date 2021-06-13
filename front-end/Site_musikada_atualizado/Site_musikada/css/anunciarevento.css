@@ -1,0 +1,150 @@
+header{
+
+    text-align: center;
+}
+/*Estilo da area do menu*/
+    nav#menu {
+
+        display: block;
+        height: 40px;
+        background-color: #f0833b;
+    }
+    ul#menulista{
+
+        list-style: none;
+        position: relative;
+        top: 7px;
+    }
+    li.itens {
+
+        display: inline-block;
+        background-color: #BDBDBD;
+        padding:3px;
+        margin: 2px;
+        border-radius: 8px;
+    }
+    li.itens:hover{
+        text-decoration: underline;
+    }
+    .itens:last-child{
+
+        position: absolute;
+        right: 10px;
+
+    }
+    a.aitens{
+
+        text-decoration: none;
+        color: black;
+        padding: 4px;
+    }
+    #logotipo{
+
+        width: 160px;
+        height: 105px;
+    }
+    #logobusca{
+
+        background-color:#a8a5a5ea;
+    }
+/*Estilo da area do main*/
+    main{
+
+        height: 650px;
+        margin: 20px 300px;
+    }
+/*Estilo de informações sobre o evento*/
+    .cadastroevento textarea{
+
+        vertical-align: top;
+        resize: none;
+    }
+
+    .cadastroevento input{
+
+        margin: 10px;
+    }
+    .cadastroevento button{
+
+        margin-left: 50%;
+        margin-top: 2.5%;
+        width: 100px;
+    }
+/*Estilo da area do rodapé*/
+    footer#rodape{
+
+        background-color: black;
+        color: white;
+        display: block;
+    }
+
+    footer p#copyright{
+
+        position: relative;
+        top: 100px;
+    }
+
+    footer div{
+
+        margin-left: 20px;
+    }
+    #logorodape{
+
+        width: 120px;
+        height: 80px;
+        position: relative;
+        margin-left: 380px;
+    }
+    ul#musikada{
+        list-style: none;
+        position: relative;
+        margin-left: 510px;
+        top: -60px;
+    }
+    ul#musikada li{
+        margin: 4px;
+    }
+    ul#organizador{
+        list-style: none;
+        position: relative;
+        margin-left: 680px;
+        top: -140px;
+    }
+    ul#organizador li{
+        margin: 4px;
+    }
+    ul#central{
+        list-style: none;
+        position: relative;
+        margin-left: 910px;
+        top: -200px;
+    }
+    ul#central a{
+        margin: 4px;
+    }
+    footer div a{
+    color: white;
+    text-decoration: none;
+    }
+    footer div a:hover{
+        text-decoration: underline;
+    }
+    
+    .rede{
+
+        position: relative;
+        margin-top: -120px;
+        margin-left: 380px;
+        
+    }
+    .rede h1{
+        font-size: 1.3em;
+    }
+  
+    .rede a{
+        display: inline-flex;
+        margin:1.5%;
+    }
+    .rede img{
+        width: 30px;
+    }

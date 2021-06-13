@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Organizados</title>
+    <link rel="stylesheet" href="css/eventosorganizados.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <script src="javascript/funçõesjava.js"> </script>
+</head>
+<body>
+    <header >
+        <!-- Área de navegação, "itens do menu"-->
+        <nav id="menu">
+            <ul id="menulista">
+              <li class="itens" onmousemove="sair_abacantor()" style="background-color: white;"><a href="homelogado.html" class="aitens">Home</a></li>
+              <li class="itens" onmousemove="abacantor()"><a href="" class="aitens">Cantor</a></li>
+              <li class="itens" onmousemove="sair_abacantor()"><a href="enviarcifraslogado.html" class="aitens">Enviar cifras</a></li>
+              <li class="itens" onmousemove="sair_abacantor()"><a href="anunciareventologado.html" class="aitens">Anunciar evento</a></li>
+              <li class="itens" onmousemove="sair_abacantor()"><a href="sobrenoslogado.html" class="aitens" >Sobre nós</a></li>
+            </ul>
+            <!--Área do logotipo e de pesquisar a música-->
+            <ul id="itenslogado">
+                <li><p onclick="abrinotificacoes()">&#128365;</p></li>
+                <li><img src="image/chefe.jpg" alt="imagem de perfil" name="imagemperfil" id="imagemperfil"></li>
+                <li><p name="nomeusuario">Edson Manuel Fortunato</p></li>
+                <li onclick="abrirtela()">&#9776;</li>
+            </ul>
+        </nav>
+        <!--Área do logotipo e de pesquisar a música-->
+        <div id="areacinza">
+
+        </div>
+    </header>
+     <!--Tela das tres barras-->
+     <div id="telabarras">
+        <ul>
+            <li><img src="image/chefe.jpg" alt="imagem de perfil" name="imagemperfil" id="imagemperfil"> Perfil</li>
+            <li>&#128420; Favoritos</li>
+            <li>&#9832; Meus eventos <a href="tela perfil.html"></a></li>
+            <li>&#11197; Sair</li>
+            <p onclick="sairnotificacao()">X</p>
+        </ul>
+    </div>
+     <!--Tela de notificações-->
+    <div id="telanotificacoes">
+        <h1>Notificações</h1>
+        <p onclick="sairnotificacao()">X</p>
+        <li>Caro usuario, termine de prencher teu cadastro para melhor aproveitar a plataforma.</li>
+        <li>Não esqueça os eventos que salvou estão preste acontecer, faça já a tua reserva.</li>
+        <li>O evento publicado foi aprovado, e ja esta disponivel na plataforma.</li>
+    </div>
+    <main id="conteudo"> 
+    <!-- eventos comparecidos -->
+        <div class="comparecidos" name="comparecidos" >
+            <h1>Eventos comparecidos</h1>
+        </div>
+    <!-- eventos organizados -->
+        <div class="organizados" name="organizados">
+            <h1>Eventos organizados</h1>
+        </div>
+    </main>
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo do musikada" id="logorodape">
+            <ul id="musikada">
+                <li><strong>Musikada</strong></li>
+                <li><a href="homemusikada.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="">Termos e Politicas</a></li>
+            </ul>
+            <ul id="organizador">
+                <li><strong>Para organizador de eventos</strong></li>
+                <li><a href="">Como funciona</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Portal</a></li>
+            </ul>
+            <ul id="central">
+                <li>Central de Ajuda</li>
+                <li><a href="faleconosco.html">Fale conosco</a></li>
+            </ul> 
+            <div class="rede">
+                <h1>Siga nos</h1> 
+                <a href=""><img src="image/facebook.png" alt=""></a>
+                <a href=""><img src="image/instagram.png" alt=""></a>
+                <a href=""><img src="image/twitter.png" alt=""></a>
+                <a href=""><img src="image/youtube.png" alt=""></a>
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>

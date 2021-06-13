@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Anunciar evento logado</title>
+    <link rel="stylesheet" href="css/anunciareventologado.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <script src="javascript/funçõesjava.js"> </script>
+</head>
+<body>
+    <header >
+        <nav id="menu">
+            <ul id="menulista">
+              <li class="itens" onmousemove="sairtela()"><a href="homelogado.html" class="aitens">Home</a></li>
+              <li class="itens" onmousemove="mostra()"><a href="" class="aitens">Cantor</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="enviarcifraslogado.html" class="aitens">Enviar cifras</a></li>
+              <li class="itens" onmousemove="sairtela()" style="background-color: white;"><a href="" class="aitens">Anunciar evento</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="sobrenoslogado.html" class="aitens" >Sobre nós</a></li>      
+            </ul>
+              <!--Área do logotipo e de pesquisar a música-->
+              <ul id="itenslogado">
+                <li><p onclick="abrinotificacoes()">&#128365;</p></li>
+                <li><img src="image/chefe.jpg" alt="imagem de perfil" name="imagemperfil" id="imagemperfil"></li>
+                <li><p name="nomeusuario">Edson Manuel Fortunato</p></li>
+                <li onclick="abrirtela()">&#9776;</li>
+            </ul>
+        </nav>
+        <div id="logobusca">
+            <img src="image/logo.png" alt="logotipo" id="logotipo">
+        </div>
+    </header>
+    <main>
+        <!--Tela das tres barras-->
+          <div id="telabarras">
+            <ul>
+                <li><img src="image/chefe.jpg" alt="imagem de perfil" name="imagemperfil" id="imagemperfil"><a href="tela perfil.html">Perfil</a></li>
+                <li><a href="favoritados.html">Favoritos</a></li>
+                <li><a href="eventosorganizados.html">Meus eventos</a></li>
+                <li> &#11197; Sair</li>
+                <p onclick="sairnotificacao()">X</p>
+            </ul>
+        </div>
+         <!--Tela de notificações-->
+        <div id="telanotificacoes">
+            <h1>Notificações</h1>
+            <p onclick="sairnotificacao()">X</p>
+            <li>Caro usuario, termine de prencher teu cadastro para melhor aproveitar a plataforma.</li>
+            <li>Não esqueça os eventos que salvou estão preste acontecer, faça já a tua reserva.</li>
+            <li>O evento publicado foi aprovado, e ja esta disponivel na plataforma.</li>
+        </div>
+        <!--Tela para pesquisar pelo cantor-->
+        <div id="telacantor" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Procurar a música pelo cantor</h1>
+            <input type="text" name="nomecantor" placeholder="Digite o nome do cantor">
+            <button><a href="cantor.html">Buscar</a></button>
+        </div>
+        <!--Informações sobre o evento-->
+        <form action="" class="cadastroevento" onclick="sairtela()">
+            <p>Nome do evento <input type="text" size="40"></p>
+            <p>Adicionar foto <input type="file"></p>
+            <p>Data de Inicio <input type="date"></p>
+            <p>Hora de Inicio<input type="time"></p>
+            <p>Data de Fim <input type="date"></p>
+            <p>Hora de Fim<input type="time"></p>
+            <label for="pago"><input type="radio" name="valor" id="pago">Pago</label>
+            <label for="gratis"><input type="radio" name="valor" id="gratis">Gratís</label>
+            <p>Tipo do ingresso <input type="text" list="tipo" size="5"></p>
+            <datalist id="tipo">
+                <option value="Vip"></option>
+                <option value="Normal"></option>
+            </datalist>
+            <p>Preço (Kz) <input type="text" size="8"></p>
+            <p>Telefone <input type="text"></p>
+            <p>Localização <input type="text" size="60"></p>
+            <label for="descricao">Descrição do evento</label>
+            <textarea name="" id="descricao" cols="70" rows="10" required></textarea>
+            <button>Enviar</button>
+         </form>
+    </main>
+    <!--Área do rodapé-->
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+            <ul id="musikada">
+                <li><strong>Musikada</strong></li>
+                <li><a href="homemusikada.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="">Termos e Politicas</a></li>
+             </ul>
+             <ul id="organizador">
+                <li><strong>Para organizador de eventos</strong></li>
+                <li><a href="">Como funciona</a></li>
+                 <li><a href="">Serviços</a></li>
+                 <li><a href="">Portal</a></li>
+            </ul>
+            <ul id="central">
+                <li>Central de Ajuda</li>
+                <li><a href="faleconosco.html">Fale conosco</a></li>
+            </ul>
+            <div class="rede">
+                <h1>Siga nos</h1> 
+                <a href=""><img src="image/facebook.png" alt=""></a>
+                <a href=""><img src="image/instagram.png" alt=""></a>
+                <a href=""><img src="image/twitter.png" alt=""></a>
+                <a href=""><img src="image/youtube.png" alt=""></a>
+            </div>     
+        </div>
+    </footer>
+</body>
+</html>

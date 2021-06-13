@@ -1,0 +1,185 @@
+<?php
+    session_start();
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="css/cifraspesquisada.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <script src="javascript/funçõesjava.js"> </script>
+</head>  
+<body> 
+    <header >
+        <!-- Área de navegação, "itens do menu"-->
+        <nav id="menu">
+            <ul id="menulista">
+              <li class="itens" onmousemove="sairtela()"><a href="homemusikada.php" class="aitens">Home</a></li>
+              <li class="itens" onmousemove="mostra()" style="background-color: white;"><a href="" class="aitens">Cantor</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="enviarcifras.php" class="aitens">Enviar cifras</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="anunciarevento.php" class="aitens">Anunciar evento</a></li>
+              <li class="itens" onmousemove="sairtela()"><a href="sobrenos.php" class="aitens" >Sobre nós</a></li>
+              <li class="itens" onmousemove="ativando()"><a href=""  class="aitens">Entrar</a></li>
+            </ul>
+        </nav>
+        <!--Área do logotipo e de pesquisar a música-->
+        <div id="areadebusca">
+            <img src="image/logo.png" alt="logotipo" id="logotipo">
+            <input type="text " id="barrapesquisar" name="barrapesquisar" placeholder="Qual música tocar ?">
+            <button id="botaopesquisar">Pesquisar</button>
+        </div>
+    </header>
+    <main id="conteudo">
+        <!--Tela de login-->
+        <div id="telalogin" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Login</h1>
+            <form action="php/login.php" method="POST">
+                <?php
+
+                if(isset($_SESSION['msg'])){
+                    echo $_SESSION['msg'];
+                    unset($_SESSION['msg']);
+                }
+                ?>
+                <input type="text" id= "emailtelefonelogin" name="emailtelefonelogin" placeholder="E-mail ou Tel" required>
+                <input type="password" id= "senhalogin"name="senhalogin" placeholder="Senha" required>
+                <input type="submit" name="entrar" value="Entrar">
+                <p>Esqueceu sua senha? <a href="">Clique aqui</a> <br></p> 
+                <p>Ainda não possui conta? <a href="#" onclick="cadastro()">Cadastre-se!</a> </p> 
+            </form>
+        </div>
+        <!--Tela de cadastro-->
+        <div id="telacadastrar">
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Cadastre-se!</h1>
+
+            <form action="php/cadastro.php" method="POST" >
+
+            <?php
+
+                if(isset($_SESSION['msg'])){
+                    echo $_SESSION['msg'];
+                    unset($_SESSION['msg']);
+                }
+            ?>
+
+                <input type="text" id="nome" name="nomecadastrar" placeholder="Nome e sobrenome" required="required"><br><br>
+                <input type="text" id="telefone" name="telefonecadastrar" placeholder="Telefone"> <br><br>
+                <input type="email" id="email" name="emailcadastrar" placeholder="E-mail"><br><br>
+                <input type="password" id="senha" name="senhacadastrar" placeholder="Senha" required="required"> <br><br>
+                <input type="password" id="confirmarsenha" name="confirmarsenha" placeholder="Confirmar a senha" >
+                <p class="texto">Ao clicar em "cadastrar", você aceita os nossos <a href="">Termos de uso e privacidade</a></p>
+                <button name="cadastrar" onclick="telavalidar()">Cadastrar</button>
+            </form>
+        </div>
+        <!--Tela confirmação do cadastro-->
+        <!--<div id="telaconfirmar" >
+            <p class="sair" onclick="sairtelavalidar()">X</p>
+            <form>
+                <p>Insira o codigo recebido, para validar as informações!</p> 
+                <input name="codigo" id="codigo" type="text">
+                <button name="btvalidar" id="btvalidar" >Validar</button>
+            </form>
+        </div>-->
+        <!--Tela para pesquisar pelo cantor-->
+        <form action="php/search.php" method="POST">
+            <div id="telacantor" >
+                <p class="sair" onclick="sairtela()">X</p>
+                <h1>Procurar a música pelo cantor</h1>
+                <input type="text" id="nomecantor" name="nomecantor" placeholder="Digite o nome do cantor">
+                <button name="busca" type="submit" value="Pesquisar">Pesquisar</button>
+            </div>
+        </form>
+        <!--Área das músicas-->
+        <div id="cifras">
+            <img src="image/pretoshow.jpg" alt="Cantor">
+            <p> <input type="text" value="Preto Show" readonly id="cantor"></p>
+            <p><input type="text" value="My Love" readonly id="letradamusica"> </p>
+            <p>Tom-<input type="text" value="M" readonly id="tomdamusica"> </p>
+            
+        </div>
+        <!--Área dos eventos-->
+        <div id="eventos">
+             <!--Localizar eventos por bairro-->
+            <p id="locabairro"> Localização <input type="text" name="localidade" id="localidade" size="10" maxlength="10" list="Bairro"></p>
+            <datalist id="Bairro">
+                <option value="Maianga"></option>
+                <option value="Benfica"></option>
+                <option value="Golfe 2"></option>
+                <option value="Cazenga"></option>
+                <option value="Cazenga"></option>
+            </datalist>
+        <!--Eventos-->
+           <ul id="galeriaevento">
+                <a href="eventoexpandido.html">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/nomalanga.jpg">
+                        <p style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633"> <strong>24 Fev, 15h</strong></p>
+                        <p>Pavilhão multiuso</p> 
+                    </li>
+                </a> 
+                <a href="">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/sumer.jpg">
+                        <p style="font-size:20"><strong>Summer concert</strong></p>
+                        <p style="color: #DC7633"> <strong>04 Jan, 23h</strong></p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </li>
+                </a> 
+                <a href="">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/luandafesta.jpg">
+                        <p style="font-size:20"><strong>Festa da cidade de Luanda</strong></p>
+                        <p style="color: #DC7633"> <strong>30 jan, 18h</strong></p>
+                        <p>Pavilhão multiuso</p> 
+                    </li>
+                </a> 
+                <a href="">
+                    <li class="eventos">
+                        <img id="imagemevento" src="image/sabadaoqualquer.jpg">
+                        <p style="font-size:20"><strong>Sabadão de qualquer jeito</strong></p>
+                        <p style="color: #DC7633"> <strong>21 mai, 14h</strong></p>
+                        <p>Pavilhão multiuso</p> 
+                    </li>
+                </a> 
+            </ul>
+        </div>
+    </main>
+    <!--Área dos videos-->
+    <div id="videos">
+        <iframe  width="24%" height="96%" src="https://www.youtube.com/embed/LNUcQ3QbqdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="v1"  width="24%" height="96%" src="https://www.youtube.com/embed/hXQxSi34GWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="v1" width="24%" height="96%" src="https://www.youtube.com/embed/atyU7YQ9roo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="v1" width="24%" height="96%" src="https://www.youtube.com/embed/b3E6E6hYSSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+     <!--Área do rodapé-->
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+                    <ul id="musikada">
+                        <li><strong>Musikada</strong></li>
+                        <li><a href="homemusikada.php">Home</a></li>
+                        <li><a href="sobrenos.php">Sobre nós</a></li>
+                        <li><a href="">Termos e Politicas</a></li>
+                    </ul>
+                    <ul id="organizador">
+                        <li><strong>Para organizador de eventos</strong></li>
+                        <li><a href="">Como funciona</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Portal</a></li>
+                    </ul>
+                    <ul id="central">
+                        <li>Central de Ajuda</li>
+                        <li><a href="faleconosco.php">Fale conosco</a></li>
+                    </ul>    
+        </div>
+    </footer>
+</body>
+</html>

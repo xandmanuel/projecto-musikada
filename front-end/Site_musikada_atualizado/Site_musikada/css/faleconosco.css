@@ -1,0 +1,127 @@
+header{
+
+    text-align: center;
+    }
+/*estilo da div para poder ter a parte cinza, abaixo do menu*/
+   div.titulo{
+
+        height: 150px;
+        background-color: grey;
+    }
+    .titulo h1{
+        margin-top: 4%;
+        margin-left: 38%;
+        position: absolute;
+        font-size: 2em;
+        font-weight: bold;
+    
+    }
+/*estilo da area do menu*/
+    nav#menu {
+
+        background-color: #f0833b;
+    }
+    
+/*estilo da area do main*/
+    main{
+
+        height: 370px;
+        margin-left: 20%;
+    }
+    #formulario{
+        width: 60%;
+        display: inline-block;
+        text-align: center;
+    }
+    #formulario label {
+        display: block;
+        text-align: right;
+
+    }
+    #formulario textarea {
+        margin-top: 1%;
+        display: inline-block;
+        width: 70%;
+        vertical-align: top;
+        background-color: #BDBDBD;
+        resize: none;
+    }
+    #formulario input {
+    margin-top: 1%;
+    display: inline-block;
+    width: 70%;
+    background-color: #BDBDBD;
+    }
+    #formulario button{
+        margin-left: 25%;  
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+    #formulario h1{
+        margin-top: 2%; 
+        margin-left: 25%;  
+        font-weight:bold;
+        font-size: 1.2em;
+    }
+
+
+
+
+/*estilo da area do rodape*/
+    footer#rodape{
+
+        background-color: black;
+        color: white;
+        display: block;
+    }
+
+    footer p#copyright{
+
+        position: relative;
+        top: 100px;
+    }
+    footer div{
+
+        margin-left: 20px;
+    }
+    #logorodape{
+
+        width: 120px;
+        height: 80px;
+        position: relative;
+        margin-left: 380px;
+    }
+    ul#musikada{
+        list-style: none;
+        position: relative;
+        margin-left: 510px;
+        top: -60px;
+    }
+    ul#musikada li{
+        margin: 4px;
+    }
+    ul#organizador{
+        list-style: none;
+        position: relative;
+        margin-left: 680px;
+        top: -140px;
+    }
+    ul#organizador li{
+        margin: 4px;
+    }
+    ul#central{
+        list-style: none;
+        position: relative;
+        margin-left: 910px;
+        top: -200px;
+    }
+    ul#central a{
+        margin: 4px;
+    }
+    footer div a{
+        color: white;
+        text-decoration: none;
+    }
+    footer div a:hover{
+        text-decoration: underline;
+    }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/eventoexpandidologado.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <title>Evento expandido</title>
+</head>
+<body>
+    <header>
+         <!-- Área de navegação, "itens do menu"-->
+        <nav id="menu">
+            <ul id="menulista">
+              <li class="itens" onmousemove="sairtela()"><a href="homelogado.html" class="aitens">Home</a></li>  
+              
+            </ul>
+             <!--Área do logotipo e de pesquisar a música-->
+             <ul id="itenslogado">
+                <li><p onclick="abrinotificacoes()">&#128365;</p></li>
+                <li><img src="image/chefe.jpg" alt="imagem de perfil" name="imagemperfil" id="imagemperfil"></li>
+                <li><p name="nomeusuario">Edson Manuel Fortunato</p></li>
+                <li onclick="abrirtela()">&#9776;</li>
+            </ul>
+        </nav>
+         <!-- Área da imagem do evento"-->
+        <div id="imgfundo"> </div>
+        <img src="image/sumer.jpg" alt="imagem do evento" id="imgevento">
+         <!-- Área de compartilhar para redes sociais"-->
+        <section class="compartilhar">
+            <h1 id="compartilhar">Compartilhar em:</h1>
+            <button class="redesociais" id="face"><img class="icone" src="image/facebook.png" alt=""></button>
+            <button class="redesociais" id="insta"><img class="icone" src="image/instagram.png" alt=""></button>
+            <button class="redesociais" id="twitter"><img class="icone" src="image/twitter.png" alt=""></button>
+            <button class="redesociais" id="whats"><img class="icone" src="image/whatsapp.png" alt=""></button>
+        </section>
+    </header>
+    <main >
+         <!--Tela de login-->
+         <div id="telalogin" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Login</h1>
+            <form>
+                <input type="text" name="" placeholder="E-mail" >
+                <input type="password" name="" placeholder="Senha">
+                <input type="submit" value="Entrar">
+                <p>Esqueceu sua senha? <a href="#">Clique aqui</a> <br> </p> 
+                <p>Ainda não possui conta? <a href="#" onclick="cadastro()">Cadastre-se!</a> </p> 
+            </form>
+        </div>
+        <!--Tela de cadastro-->
+        <div id="telacadastrar">
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Cadastre-se!</h1>
+            <form>
+                <input type="text" id="nome" placeholder="Nome e sobrenome"><br><br>
+                <input type="text" id="telefone" placeholder="Telefone"> <br><br>
+                <input type="email" id="email" placeholder="E-mail"><br><br>
+                <input type="password" id="senha" placeholder="Senha" > <br><br>
+                <input type="password" id="confirmarsenha" placeholder="Confirmar a senha" >
+                <p class="texto">Ao clicar em "cadastrar", você aceita os nossos <a href="">Termos de uso e privacidade</a></p>
+                <button  name="cadastrar" onclick="telavalidar()">Cadastrar</button>
+            </form>
+        </div>
+        <!--Tela confirmação do cadastro-->
+        <div id="telaconfirmar" >
+            <p class="sair" onclick="sairtelavalidar()">X</p>
+            <form>
+                <p>Insira o codigo recebido, para validar as informações!</p> 
+                <input name="codigo" id="codigo" type="text">
+                <button name="btvalidar" id="btvalidar" >Validar</button>
+            </form>
+        </div>
+        <!--Tela para pesquisar pelo cantor-->
+        <div id="telacantor" >
+            <p class="sair" onclick="sairtela()">X</p>
+            <h1>Procurar a música pelo cantor</h1>
+            <input type="text" placeholder="Digite o nome do cantor">
+            <button><a href="cantor.html">Buscar</a></button>
+        </div>
+         <!-- Área da descrição do evento"-->
+        <div id="descricao">
+            <h1 name="nomedoevento" id="nomedoevento" >Nomalanga Carnaval</h1> <br>
+            <p name="datadoevento" id="datadoevento">24 de Fev, 15h</p>
+            <p name="localdoevento" id="localdoevento">Pavilhão multiuso</p><br>
+            <h1>Descrição do evento</h1> <br>
+            <p id="descricaodoevento"> O ano só começou <br>
+                O carnaval mais agressivo da cidade vai acontecer. <br> <br>           
+                *ATRAÇÕES:* <br><br>
+                Dj Manresnas <br>
+                Dj helio baiano<br>
+                Os santiegos <br>
+                Filho do Zua <br>
+                Felipe Hot <br><br>                
+                Você não vai ficar de fora né ?! <br> <br>
+                INFORMAÇÕES IMPORTANTES: <br><br>     
+                - Evento para maiores de 17 anos; <br>
+                - Evento NÃO open bar; <br>
+                - Não compre ingressos de terceiros; <br>
+                - Não serão aceitas devoluções, 7 dias após a compra. <br>
+                - Não serão aceitas devoluções, em 48 horas antes do evento. <br>
+                - Não nos responsabilizamos por eventuais perdas dentro do evento. <br>
+                Boa festa, e divirta-se, afinal, tudo isto está sendo planejado com muito carinho, pensando exclusivamente em VOCÊS!
+            </p>
+        </div>
+        
+        <!-- Área da descrição do organizador"-->
+        <div id="organizacao">
+            <div id="pagamento"  >
+                <div id="preço">
+                    <p>Preço (Kz)</p>
+                    <p id="valor" name="valor">5000</p>
+                </div>
+                <input type="number" method="post" oninput="precoTotal()" id="qtdaingresso" name="qtdaingresso" placeholder="1" min="1" max="10">
+                <button id="btaocomparar">SOLICITAR</button>
+            </div>
+            <div id="organiza">
+                <h1>Organização</h1><br>
+                <img src="image/chefe.jpg" alt="O partido" id="organifoto"> <br><br>
+                <p>Casa Show</p><br>
+                <p> 👍 85%</p><br>
+                <p>&#128078; 15%</p><br>
+                <input type="submit" value=" Falar com o organizador">
+           </div>
+           <div id="contatarorganizacao">
+                <div id="cabeca">
+                    <p>X</p>
+                    <h2>Falar com organizador (a)</h2>  
+                </div> 
+                <form action="" id="componentes">
+                    <label for="nome">Nome: <input type="text" name="" id="nome" placeholder="Nome"></label>  
+                    <label for="contacto">E-mail/Tel: <input type="text" name="" id="contacto" placeholder="Email ou Telefone"></label>  
+                    <label for="Mensagem">Mensagem: <textarea name="" id="Mensagem" placeholder="Deixe tua mensagens para o organizador!" cols="30" rows="15"></textarea></label> 
+                    <button id="msgorganiza">Enviar Mensagem</button>
+                </form>
+           </div>
+        </div>
+    </main>
+    <!-- Área da localização do evento"-->
+        <div id="localizacao">
+            <h1>Localizacao no Mapa</h1><br>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4555.135122939129!2d13.233978644881688!3d-8.820227947959786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f24d33f45bd3%3A0xafe94a8e11b1a667!2sHorton!5e0!3m2!1spt-BR!2sbr!4v1581176253890!5m2!1spt-BR!2sbr" width="200" height="150"></iframe>        
+        </div>
+    <!-- Área do rodape"-->
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+            <ul id="musikada">
+                <li><strong>Musikada</strong></li>
+                <li><a href="homemusikada.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="">Termos e Politicas</a></li>
+            </ul>
+            <ul id="organizador">
+                <li><strong>Para organizador de eventos</strong></li>
+                <li><a href="">Como funciona</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Portal</a></li>
+            </ul>
+            <ul id="central">
+                <li>Central de Ajuda</li>
+                <li><a href="faleconosco.html">Fale conosco</a></li>
+            </ul>    
+            <div class="rede">
+                <h1>Siga nos</h1> 
+                <a href=""><img src="image/facebook.png" alt=""></a>
+                <a href=""><img src="image/instagram.png" alt=""></a>
+                <a href=""><img src="image/twitter.png" alt=""></a>
+                <a href=""><img src="image/youtube.png" alt=""></a>
+            </div> 
+        </div>
+    </footer>
+</body>
+<script src="javascript/script.js"></script>
+<script src="javascript/funçõesjava.js"></script>
+</html>

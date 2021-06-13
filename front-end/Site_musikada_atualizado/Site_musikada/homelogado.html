@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Inicial logado</title>
+    <link rel="stylesheet" href="css/homestilologado.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <script src="javascript/funçõesjava.js"> </script>
+    <link rel="shortcut icon" href="image/logo.png">
+     <!-- folha de estilo do slider -->
+     <link rel="stylesheet" href="css/lightslider.css">
+     <!-- jquery -->
+    <script src="javascript/jquery-3.5.1.js"></script>
+     <!-- slider scrips -->
+    <script src="javascript/lightslider.js"></script>
+</head>  
+<body> 
+    <header >
+        <!-- Área de navegação, "itens do menu"-->
+        <nav id="menu">
+            <ul id="menulista">
+              <li class="itens" onmousemove="sair_abacantor()" style="background-color: white;"><a href="homelogado.html" class="aitens">Home</a></li>
+              <li class="itens" onmousemove="abacantor()"><a href="" class="aitens">Cantor</a></li>
+              <li class="itens" onmousemove="sair_abacantor()"><a href="enviarcifraslogado.html" class="aitens">Enviar cifras</a></li>
+              <li class="itens" onmousemove="sair_abacantor()"><a href="anunciareventologado.html" class="aitens">Anunciar evento</a></li>
+              <li class="itens" onmousemove="sair_abacantor()"><a href="sobrenoslogado.html" class="aitens" >Sobre nós</a></li>
+            </ul>
+            <!--Área do logotipo e de pesquisar a música-->
+            <ul id="itenslogado">
+                <li><p onclick="abrinotificacoes()">&#128365;</p></li>
+                <li><img src="image/chefe.jpg" alt="imagem de perfil" name="imagemperfil" id="imagemperfil"></li>
+                <li><p name="nomeusuario">Edson Manuel Fortunato</p></li>
+                <li onclick="abrirtela()">&#9776;</li>
+            </ul>
+        </nav>
+        <!--Área do logotipo e de pesquisar a música-->
+        <div id="areadebusca">
+            <img src="image/logo.png" alt="logotipo" id="logotipo">
+            <input type="text " id="barrapesquisar" placeholder="Qual música tocar ?">
+            <button id="botaopesquisar">Buscar</button>
+        </div>
+    </header>
+    <main id="conteudo">
+        <!--Tela das tres barras-->
+        <div id="telabarras">
+            <ul>
+                <li><img src="image/chefe.jpg" alt="imagem de perfil" name="imagemperfil" id="imagemperfil"><a href="tela perfil.html">Perfil</a></li>
+                <li><a href="favoritados.html">Favoritos</a></li>
+                <li><a href="eventosorganizados.html">Meus eventos</a></li>
+                <li> Sair</li>
+                <p onclick="sairnotificacao()">X</p>
+            </ul>
+        </div>
+         <!--Tela de notificações-->
+        <div id="telanotificacoes">
+            <h1>Notificações</h1>
+            <p onclick="sairnotificacao()">X</p>
+            <li>Caro usuario, termine de prencher teu cadastro para melhor aproveitar a plataforma.</li>
+            <li>Não esqueça os eventos que salvou estão preste acontecer, faça já a tua reserva.</li>
+            <li>O evento publicado foi aprovado, e ja esta disponivel na plataforma.</li>
+        </div>
+        <!--Tela para pesquisar pelo cantor-->
+        <div id="telacantor" >
+            <p class="sair" onclick="sair_abacantor()">X</p>
+            <h1>Procurar a música pelo cantor</h1>
+            <input type="text" name="nomecantor" placeholder="Digite o nome do cantor">
+            <button><a href="cantor.html">Buscar</a></button>
+        </div>
+        <!--Área das músicas-->
+        <div id="cifras">
+            <h1>Top Cifras</h1>
+            <ul onmousemove="sair_abacantor()">
+                <a href=""><li class ="musica"> <p>1-Ary<br>ola</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>2-Preto Show<br>Pedra</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>3-Anselmo Ralph<br>Curtição</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>4-Cef<br>Ta me treinar</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>5-Big Nelo<br>Ta doçe</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>6-Mobbers<br>Deixar cair geral</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>7-Lil Saint<br>Me desculpa</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>8-Edmazia<br>Alma nua</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>9-Telma Lee<br>Te amo</p></li></a>
+                <a href="cantor.html"><li class ="musica"> <p>10-Filho do Zua<br>Ditado</p></li></a>
+            </ul>
+        </div>
+        <!--Área dos eventos-->
+        <div id="eventos">
+             <!--Localizar eventos por bairro-->
+            <p id="locabairro"> Localização <input type="text" id="localidade" size="10" maxlength="10" list="Bairro"></p>
+            <datalist id="Bairro">
+                <option value="Maianga"></option>
+                <option value="Benfica"></option>
+                <option value="Golfe 2"></option>
+                <option value="Cazenga"></option>
+                <option value="Cazenga"></option>
+            </datalist>
+        <!--Eventos-->
+        <ul id="linha-evento-1" class="linha-evento-1">
+            <li class="item-a">
+                <div class="evento">
+                    <div class="teste1">
+                    <a href="eventoexpandidologado.html">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/sumer.jpg">
+                        </div>
+                    </a>
+                        <div class="salvar" name="salvar">
+                            <span >&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/nomalanga.jpg">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span>&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>  
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/sumer.jpg">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span>&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li> 
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img src="image/sabadaoqualquer.jpg" alt="">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span>&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>  
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/luandafesta.jpg">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span >&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>
+        </ul>
+         <ul id="linha-evento-2" class="linha-evento-2">
+            <li class="item-a">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img src="image/nomalanga.jpg" alt="">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span >&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/sumer.jpg">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span>&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>  
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/luandafesta.jpg">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span>&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li> 
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/sabadaoqualquer.jpg">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span>&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>  
+            <li class="item-b">
+                <div class="evento">
+                    <div class="teste1">
+                        <div class="imagem">
+                            <img id="imagemevento" src="image/sumer.jpg">
+                        </div>
+                        <div class="salvar" name="salvar">
+                            <span >&#9829;</span>  
+                        </div>
+                    </div>
+                    <div class="localizacao">
+                        <p id="titulofesta" style="font-size:20"><strong>Nomalanga</strong></p>
+                        <p style="color: #DC7633">24 Fev, 15h</p>
+                        <p>Brincolandia centro de eventos</p> 
+                    </div> 
+                </div>
+            </li>
+        </ul>  
+        </div>
+    </main>
+    <!--Área dos videos-->
+    <div id="videos">
+        <iframe  width="24%" height="96%" src="https://www.youtube.com/embed/LNUcQ3QbqdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="v1"  width="24%" height="96%" src="https://www.youtube.com/embed/hXQxSi34GWY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="v1" width="24%" height="96%" src="https://www.youtube.com/embed/atyU7YQ9roo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="v1" width="24%" height="96%" src="https://www.youtube.com/embed/b3E6E6hYSSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+     <!--Área do rodapé-->
+    <footer id="rodape">
+        <div>
+            <p id="copyright">Copyright &copy; 2020 - Todos direitos reservados a Musikada </p>
+            <img src="image/logo.png" alt="logotipo" id="logorodape">
+                    <ul id="musikada">
+                        <li><strong>Musikada</strong></li>
+                        <li><a href="homelogado.html">Home</a></li>
+                        <li><a href="sobrenoslogado.html">Sobre nós</a></li>
+                        <li><a href="">Termos e Politicas</a></li>
+                    </ul>
+                    <ul id="organizador">
+                        <li><strong>Para organizador de eventos</strong></li>
+                        <li><a href="">Como funciona</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Portal do organizador</a></li>
+
+                    </ul>
+                    <ul id="central">
+                        <li>Central de Ajuda</li>
+                        <li><a href="faleconosco.html">Fale conosco</a></li>
+                    </ul>    
+        </div>
+    </footer>
+    <script type="text/javascript" src="javascript/script.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+header{
+
+    text-align: center;
+    width: 100%;
+}
+
+/*Estlios da area o Menu*/
+    nav#menu {
+
+        display: block;
+        height: 40px;
+        background-color: #f0833b;
+    }
+    ul#menulista{
+
+        list-style: none;
+        position: relative;
+        top: 7px;
+    }
+
+    li.itens {
+
+        display: inline-block;
+        background-color: #BDBDBD;
+        padding:3px;
+        margin: 2px;
+        border-radius: 8px;
+
+    }
+    .itens:last-child{
+
+        position: absolute;
+        right: 10px;
+
+    }
+    a.aitens{
+
+        text-decoration: none;
+        color: black;
+        padding: 4px;
+    }
+
+    a.aitens:hover{
+        text-decoration: underline ;
+    }
+/*Estilos da area de busca*/
+    #logotipo{
+
+        width: 160px;
+        height: 105px;
+    }
+
+    #areadebusca{
+
+        background-color:#a8a5a5ea;
+    }
+    #barrapesquisar{
+        position: absolute;
+        margin-top: 40px;
+        padding-left: 4px;
+    }
+    #botaopesquisar{
+        position: relative;
+        left: 180px;
+        bottom:50px;
+        background-color: #f0833b;
+        border-radius:0 8px 8px 0;
+        cursor: pointer;
+    }
+/*Estilos da area main*/    
+    main#conteudo{
+
+        height: 500px;
+
+    }
+    div#cifras{
+        float: left;
+        width: 49.5%;
+        height: 500px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        font-size: 1.1em;
+    }
+
+    #cifras #cantor{
+        color: black;
+        font-size: 1.1em;
+
+    }
+    #cifras input{
+        border: none;
+        color: #e65e03;
+    }
+    #cifras img{
+        width: 100px;
+        height: 80px;
+        float: left;
+        margin-left: 20px;
+        border-radius: 8px;
+    }
+   
+  
+/*Estilos da area de eventos*/
+    div#eventos{
+
+        float:right;
+        width: 50%;
+        height: 500px;
+        border-left: 1px solid grey;
+    }
+
+    #locabairro{
+
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+
+    #galeriaevento {
+
+        width: 600px;
+        padding: 1%;
+    }
+    #galeriaevento{
+
+    margin-left: 20px;
+    }
+    #galeriaevento li{
+
+        float: left;
+        width: 220px;
+        height: 185px;
+        margin: 10px;
+        padding:10px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        border-radius: 15px;
+        background-color:#E6E6E6; 	
+    }
+    #imagemevento{
+
+        width: 80%;
+        height: 130px;
+        text-align: center;
+        border-radius: 5px;
+
+    }
+    li p{
+        text-align: center;
+        font-size: 12pt;
+        padding: 1.1px;
+        color: black;   
+    }
+/*Estilos da area dos vidoes*/
+    #videos{
+
+        height: 240px;
+        width: 100%;
+        background-color:#BDBDBD;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    iframe{
+        display: inline-block;
+    }
+    #v1{
+
+        margin-left: 1%;
+    }
+/*Estilos do rodape*/    
+    footer#rodape{
+
+        background-color: black;
+        color: white;
+        display: block;
+    }
+
+    footer p#copyright{
+
+        position: relative;
+        top: 100px;
+    }
+
+    footer div{
+
+        margin-left: 20px;
+    }
+    #logorodape{
+
+        width: 120px;
+        height: 80px;
+        position: relative;
+        margin-left: 380px;
+    }
+    ul#musikada{
+        list-style: none;
+        position: relative;
+        margin-left: 510px;
+        top: -60px;
+    }
+    ul#musikada li{
+        margin: 4px;
+    }
+    ul#organizador{
+        list-style: none;
+        position: relative;
+        margin-left: 680px;
+        top: -140px;
+    }
+    ul#organizador li{
+        margin: 4px;
+    }
+    ul#central{
+        list-style: none;
+        position: relative;
+        margin-left: 910px;
+        top: -200px;
+    }
+    ul#central a{
+        margin: 4px;
+    }
+    footer div a{
+    color: white;
+    text-decoration: none;
+    }
+    footer div a:hover{
+        text-decoration: underline;
+    }

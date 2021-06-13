@@ -1,0 +1,214 @@
+header{
+    width: 100%;
+    text-align: center;
+    height: 25%;
+    }
+/*Estlios da area o Menu*/
+nav#menu {
+    width: 100%;
+    display: block;
+    height: 40px;
+    background-color: #f0833b;
+}
+ul#menulista{
+    list-style: none;
+    position: relative;
+    top: 7px;
+}
+li.itens {
+    display: inline-block;
+    background-color: #BDBDBD;
+    padding:3px;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+a.aitens{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+
+a.aitens:hover{
+    text-decoration: underline ;
+}
+/*Estilo dos itens logado*/
+#telabarras {
+    background-color: white;
+    width: 11%;
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1%;
+    box-sizing: border-box;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+}
+#telabarras li{
+    padding-top:4%;
+    cursor: pointer;
+}
+#telabarras p{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+}
+#itenslogado{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+#itenslogado li{
+    display: inline-block;
+    padding-left: 10px;
+
+}
+#imagemperfil{
+    border-radius: 50%;
+    width: 20px;
+}
+#telanotificacoes{
+    width: 20%;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding:1%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: none;
+}
+#telanotificacoes h1{
+    font-weight: bold;
+}
+#telanotificacoes p{
+    position: absolute;
+    cursor: pointer;
+    top: 5%;
+    right: 5%;
+}
+/*Estilos da area de busca*/
+#logobusca{
+    height: 115px;
+    background-color:#a8a5a5ea;
+    }
+/*Estilos das informações do usuario*/  
+    .infousuario {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 4%;
+        border-right: 1px solid black;
+        }
+      
+    .infousuario p{
+        margin-left: 30px;
+        padding: 1%;
+        text-align: right;
+     }
+     .infousuario img{
+         width: 150px;
+         height: 100px;
+     }
+    .infousuario p img{
+        margin: 5px auto;
+     }
+    .infousuario button{
+        margin:20px;
+     }
+    .infousuario input{
+        width: 70%;
+        border: none;
+        border-bottom: 1px solid black;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: black;
+        text-align: center;
+        vertical-align: top;
+       }
+        .infousuario .btsalvar{
+
+            margin-left:48% ;
+            width: 12%;
+        }
+/*Estilos do rodape*/  
+    footer#rodape{
+        width: 100%;
+        height: 40% ;
+        background-color: black;
+        color: white;
+    }
+    footer p#copyright{
+
+        position: relative;
+        top: 100px;
+    }
+
+    footer div{
+
+        margin-left: 20px;
+    }
+    #logorodape{
+
+        width: 120px;
+        height: 80px;
+        position: relative;
+        margin-left: 380px;
+    }
+    ul#musikada{
+        list-style: none;
+        position: relative;
+        margin-left: 510px;
+        top: -60px;
+    }
+    ul#musikada li{
+        margin: 4px;
+    }
+    ul#organizador{
+        list-style: none;
+        position: relative;
+        margin-left: 680px;
+        top: -140px;
+    }
+    ul#organizador li{
+        margin: 4px;
+    }
+    ul#central{
+        list-style: none;
+        position: relative;
+        margin-left: 910px;
+        top: -200px;
+    }
+    ul#central a{
+        margin: 4px;
+    }
+    footer div a{
+        color: white;
+        text-decoration: none;
+    }
+    footer div a:hover{
+        text-decoration: underline;
+    }
+    .rede{
+
+        position: relative;
+        margin-top: -120px;
+        margin-left: 380px;
+        
+    }
+    .rede h1{
+        font-size: 1.3em;
+    }
+  
+    .rede a{
+        display: inline-flex;
+        margin:1.5%;
+    }
+    .rede img{
+        width: 30px;
+    }
